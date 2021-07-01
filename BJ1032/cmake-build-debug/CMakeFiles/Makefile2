@@ -63,16 +63,16 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/sum/Desktop/Soomin Lee/개인공부/C++/BJ1024"
+CMAKE_SOURCE_DIR = /Users/sum/Desktop/GitHub/Study/BJ1032
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/sum/Desktop/Soomin Lee/개인공부/C++/BJ1024/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/sum/Desktop/GitHub/Study/BJ1032/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/BJ1024.dir/all
+all: CMakeFiles/BJ1032.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/BJ1024.dir/clean
+clean: CMakeFiles/BJ1032.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/BJ1024.dir
+# Target rules for target CMakeFiles/BJ1032.dir
 
 # All Build rule for target.
-CMakeFiles/BJ1024.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1024.dir/build.make CMakeFiles/BJ1024.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1024.dir/build.make CMakeFiles/BJ1024.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/sum/Desktop/Soomin Lee/개인공부/C++/BJ1024/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target BJ1024"
-.PHONY : CMakeFiles/BJ1024.dir/all
+CMakeFiles/BJ1032.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1032.dir/build.make CMakeFiles/BJ1032.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1032.dir/build.make CMakeFiles/BJ1032.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/sum/Desktop/GitHub/Study/BJ1032/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target BJ1032"
+.PHONY : CMakeFiles/BJ1032.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/BJ1024.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/sum/Desktop/Soomin Lee/개인공부/C++/BJ1024/cmake-build-debug/CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BJ1024.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/sum/Desktop/Soomin Lee/개인공부/C++/BJ1024/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/BJ1024.dir/rule
+CMakeFiles/BJ1032.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sum/Desktop/GitHub/Study/BJ1032/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BJ1032.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sum/Desktop/GitHub/Study/BJ1032/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/BJ1032.dir/rule
 
 # Convenience name for target.
-BJ1024: CMakeFiles/BJ1024.dir/rule
+BJ1032: CMakeFiles/BJ1032.dir/rule
 
-.PHONY : BJ1024
+.PHONY : BJ1032
 
 # clean rule for target.
-CMakeFiles/BJ1024.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1024.dir/build.make CMakeFiles/BJ1024.dir/clean
-.PHONY : CMakeFiles/BJ1024.dir/clean
+CMakeFiles/BJ1032.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1032.dir/build.make CMakeFiles/BJ1032.dir/clean
+.PHONY : CMakeFiles/BJ1032.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/sum/Desktop/Soomin Lee/개인공부/C++/BJ1024
+# Install script for directory: /Users/sum/Desktop/GitHub/Study/BJ1032
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/sum/Desktop/Soomin Lee/개인공부/C++/BJ1024/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/sum/Desktop/GitHub/Study/BJ1032/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

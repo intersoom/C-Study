@@ -67,10 +67,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/sum/Desktop/Soomin Lee/개인공부/C++/BJ1024"
+CMAKE_SOURCE_DIR = /Users/sum/Desktop/GitHub/Study/BJ1032
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/sum/Desktop/Soomin Lee/개인공부/C++/BJ1024/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/sum/Desktop/GitHub/Study/BJ1032/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/sum/Desktop/Soomin Lee/개인공부/C++/BJ1024/cmake-build-debug/CMakeFiles" "/Users/sum/Desktop/Soomin Lee/개인공부/C++/BJ1024/cmake-build-debug//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sum/Desktop/GitHub/Study/BJ1032/cmake-build-debug/CMakeFiles /Users/sum/Desktop/GitHub/Study/BJ1032/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/sum/Desktop/Soomin Lee/개인공부/C++/BJ1024/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sum/Desktop/GitHub/Study/BJ1032/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BJ1024
+# Target rules for targets named BJ1032
 
 # Build rule for target.
-BJ1024: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BJ1024
-.PHONY : BJ1024
+BJ1032: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BJ1032
+.PHONY : BJ1032
 
 # fast build rule for target.
-BJ1024/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1024.dir/build.make CMakeFiles/BJ1024.dir/build
-.PHONY : BJ1024/fast
+BJ1032/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1032.dir/build.make CMakeFiles/BJ1032.dir/build
+.PHONY : BJ1032/fast
 
 main.o: main.cpp.o
 
@@ -148,7 +148,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1024.dir/build.make CMakeFiles/BJ1024.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1032.dir/build.make CMakeFiles/BJ1032.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -157,7 +157,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1024.dir/build.make CMakeFiles/BJ1024.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1032.dir/build.make CMakeFiles/BJ1032.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -166,7 +166,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1024.dir/build.make CMakeFiles/BJ1024.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BJ1032.dir/build.make CMakeFiles/BJ1032.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -177,7 +177,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... BJ1024"
+	@echo "... BJ1032"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
