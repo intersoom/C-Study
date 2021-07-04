@@ -1,0 +1,3 @@
+/Users/sum/Desktop/GitHub/Study/BJ1308/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/sum/Desktop/GitHub/Study/BJ1308/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sum/Desktop/GitHub/Study/BJ1308/cmake-build-debug/CMakeFiles/BJ1308.dir
