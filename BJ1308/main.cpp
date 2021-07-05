@@ -24,8 +24,6 @@ int main() {
     cin >> endYear >> endMonth >> endDay;
 
     //예외처리
-
-
     if ((endYear - startYear) == 1000){
         if (endMonth >= startMonth && endDay >= startDay){
             cout << "gg";
@@ -112,15 +110,12 @@ int main() {
 //윤년 판별 함수
 int leapYear(int year) {
     if (year % 4 == 0){
-        if (year % 100 == 0) {
-            if (year % 400 == 0){
-                return 1;
-            }
-            else{
-                return 0;
-            }
+        if (year % 100 != 0 || year % 400 == 0) {
+            return 1;
         }
-    return 1;
+        else{
+            return 0;
+        }
     }
     else{
         return 0;
