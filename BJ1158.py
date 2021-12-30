@@ -1,31 +1,33 @@
-count, kill = input().split(" ")
-
+count, kill =  input().split(" ")
 count = int(count)
 kill = int(kill)
 
-peopleList = []
 result = []
+
 killCount = 1
+index = 0
+endIndex = count
 
-for i in range(1, count+1):
-        peopleList.append(i)
+#peopleList = list(map(int, range(1, count+1)))
 
-while len(peopleList) != 0:
-    if killCount % kill == 0:
-        result.append(peopleList[0])
-        del peopleList[0]
-    else:
-        peopleList.append(peopleList[0])
-        del peopleList[0]
-    killCount += 1
-    
+while count != 0:
+    if index == endIndex:
+        index = 0
+            
+    if str((index + 1)) not in result:
+        if killCount == kill:
+            print(index)
+            result.append(str(index + 1))
+            killCount = 1
+            count -= 1
+        else:
+            killCount += 1
+    index += 1
+     
+        
+# 출력 파트
 resultStr = "<"
-
-for i in result:
-    if result.index(i) < len(result) - 1:
-        resultStr = resultStr + (str(i) + ", ")
-    else:
-        resultStr = resultStr + str(i)
+resultStr += ", ".join(result)
 resultStr += ">"
 
 print(resultStr)
