@@ -3,27 +3,26 @@ count = int(count)
 kill = int(kill)
 
 result = []
+keep = []
 
-killCount = 1
-index = 0
-endIndex = count
+killCount = 0
+index = kill -1
 
-#peopleList = list(map(int, range(1, count+1)))
 
-while count != 0:
-    if index == endIndex:
-        index = 0
+peopleList = list(map(int, range(1, count+1)))
+keep = peopleList
+
+for i in range(count):
+    result.append(str(peopleList[index]))
+    keep.pop(index)
+    
+    index += kill
+    
+    if index >= len(peopleList):
+        index = index - len(peopleList)
+        
+        
             
-    if str((index + 1)) not in result:
-        if killCount == kill:
-            print(index)
-            result.append(str(index + 1))
-            killCount = 1
-            count -= 1
-        else:
-            killCount += 1
-    index += 1
-     
         
 # 출력 파트
 resultStr = "<"
