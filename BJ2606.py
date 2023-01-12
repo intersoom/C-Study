@@ -1,3 +1,4 @@
+# 인접행렬 방식 사용
 computerNum = int(input())
 linkNum = int(input())
 
