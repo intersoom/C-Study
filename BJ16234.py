@@ -42,7 +42,6 @@ while turn:
         if breaker:
             breaker = False
             break
-        i += 1
         while j < N:
             if visited[i][j] == 0:
                 q.append([i, j, arr[i][j]])
@@ -82,9 +81,7 @@ while turn:
 
                         arr[x][y] = int(population)
                         visited[x][y] = 0
-                    # # 초기화
-                    i = 0
-                    j = 0
+
                     unite = []
                     uniteIndex = []
                     breaker = True
@@ -94,6 +91,7 @@ while turn:
                     turn = False
                     break
             j += 1
+        i += 1
 
 
 print(answer)
