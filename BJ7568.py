@@ -2,10 +2,6 @@ import sys
 N = int(sys.stdin.readline())
 
 arr = []
-result = []
-start = 0
-end = 0
-
 
 for i in range(N):
   temp = sys.stdin.readline().split(' ')
@@ -14,24 +10,9 @@ for i in range(N):
 
   arr.append(temp)
 
-# 몸무게로 정렬
-arr1 = sorted(arr, key=lambda x: (-x[0], -x[1]))
-# 키로 정렬
-arr2 = sorted(arr, key=lambda x: -x[1])
-
-count = 1
-
-# arr1[0].append(1)
-
-
-
-print(arr1)
-print(arr2)
- 
-# for i in arr:
-#   count += 1
-#   if count == N:
-#     print(i[2])
-#   else:
-#     print(i[2], end=' ')
-  
+for i in range(N):
+  rank = 1
+  for j in range(N):
+    if arr[i][0] < arr[j][0] and arr[i][1] < arr[j][1]:
+      rank += 1
+  print(rank, end=' ')
